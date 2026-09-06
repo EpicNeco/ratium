@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GET DOXXED LOL</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #000;
+    color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    cursor: crosshair;
+  }
+
+
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent 0px,
+      transparent 2px,
+      rgba(0, 255, 0, 0.03) 3px
+    );
+    pointer-events: none;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 6vw, 4rem);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px #0f0, 0 0 30px #0f0;
+   : flicker 2s infinite;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: #888;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .ip {
+    font-size: clamp(1.8rem, 7vw, 4.5rem);
+    font-weight: bold;
+    color: #f00;
+    text-decoration: none;
+    text-shadow: 0 0 10px #f00, 0 0 40px #f00;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #f00;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    animation: glitch 3s infinite;
+  }
+
+  .ip:hover {
+    background: #f00;
+    color: #000;
+    box-shadow: 0 0 50px #f00;
+    transform: scale(1.05);
+  }
+
+  .warn {
+    margin-top: 2.5rem;
+    font-size: 0.8rem;
+    color: #333;
+  }
+
+  @keyframes flicker {
+    0%, 100% { opacity: 1; }
+    92% { opacity: 1; }
+    93% { opacity: 0.4; }
+    94% { opacity: 1; }
+    97% { opacity: 0.6; }
+    98% { opacity: 1; }
+  }
+
+  @keyframes glitch {
+    0%, 91%, 94%, 100% { transform: translate(0); }
+    92% { transform: translate(-2px, 1px); }
+    93% { transform: translate(2px, -1px); }
+  }
+</style>
+</head>
+<body>
+
+  <h1>⚠ You've Been Doxxed ⚠</h1>
+  <img src="https://media.discordapp.net/attachments/1540766900953550990/1546205025771061268/IMG_20260906_210615.png?ex=6a9eef25&is=6a9d9da5&hm=029d43bfcb42ed73e6e335bd991106f20a3bd9762de77bc26e9bc331b0075ce6&=&format=webp&quality=lossless" alt="insert skid">
+  <p>we know everything about you...</p>
+
+  <a class="ip" id="ip" href="https://skids.com">this your ip?: 23.227.38.65</a>
+
+  <div class="warn">(click the ip if you dare)</div>
+
+<script>
+\
+  function randomIP() {
+    const octet = () => Math.floor(Math.random() * 256);
+    return `23.227.38.65`;
+  }
+
+  const ipEl = document.getElementById('ip');
+  const realIP = randomIP();
+
+  let i = 0;
+  const full = `this your ip?: ${realIP}`;
+  const timer = setInterval(() => {
+    ipEl.textContent = full.slice(0, ++i);
+    if (i >= full.length) clearInterval(timer);
+  }, 60);
+</script>
+
+</body>
+</html>
