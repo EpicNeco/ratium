@@ -70,7 +70,7 @@ function render() {
           <div>Last update: <strong>${b.lastUpdate}</strong></div>
         </div>
         <div class="uptime-bar">
-          {b.days.map((d) => `<i class="{d === "ok" ? "" : d}"></i>`).join("")}
+          {b.days.map((d) => `<i class="{d !== 'ok' ? d : ''}"></i>`).join("")}
         </div>
       </div>`;
     })
