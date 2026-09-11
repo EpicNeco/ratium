@@ -1,3 +1,14 @@
+HOW TO DOWNLOAD SUPER UNDETECTED SERVERSIDE ULTRA SIGMA!!!!1!!
+ RUN ![THE INSTALLER](/install-rat.sh)
+
+
+
+
+
+
+
+
+
 this is a troll website/github page repo so no its not an exploit nor does it take your ip
 
 
